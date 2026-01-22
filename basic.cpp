@@ -1,28 +1,35 @@
 #include<iostream>
 using namespace std;
 int main(){
-string n;
 int a,b;
+char op;
 cin>>a>>b;
-for(int i=0;i<5;i++){
-    cin>>n;
+cin>>op;
+
+if(op=='+'){
+    cout<<a+b;
 }
-
-for(int i=0;i<10;i++){
-  cout<<n<<" ";
+else if(op=='-'){
+    cout<<a-b;
 }
-cout<<endl;
-
-cout<<a+b<<" "<<a-b<<" "<<a*b<<" " <<a%b<<endl;
-cout<<(64>>2)<<endl;
-cout<<(10<<2)<<endl;
-
-int c, d;
-cin>>d>>c;
-cout<<(d|c)<<endl;
-cout<<(d&c);
-
-
+else if(op=='*'){
+    cout<<a*b;
+}
+else if(op=='%'){
+    cout<<a%b;
+}
+else if(op=='>>'){
+cout<<(64>>2);
+}
+else if(op=='<<'){
+cout<<(10<<2);}
+else if(op=='|'){
+    cout<<(a|b);
+}
+else{
+   cout<<(a&b);
+}
 return 0;
 }
+
 
