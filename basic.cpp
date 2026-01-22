@@ -25,3 +25,4 @@ cout<<(d&c);
 
 return 0;
 }
+
