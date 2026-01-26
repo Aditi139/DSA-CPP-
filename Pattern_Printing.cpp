@@ -21,7 +21,7 @@ for (int i=1; i<=5; i++){
 
 for(int i=5; i>=1; i--){
 
-    for(int j=i; j>=1; j--){
+    for(int j=1; j<=i; j++){
 
         cout<<"*";
     }
@@ -49,14 +49,14 @@ for(int i=1; i<=5; i++){
 
 for(int i=5; i>=1; i--){
 
-    for(int j=5-i; j>=1; j--){
+    for(int j=1; j<=5-i; j++){
         cout<<" ";
     }
 
-    for(int j=i; j>=1; j--){
+    for(int j=1; j<=i; j++){
         cout<<"*";
     }
-   cout<<endl;
+    cout<<endl;
 }
 
 
@@ -87,24 +87,47 @@ for(int i=5; i>=1; i--){
     cout<<endl;
 }
 
-//Half Dimond
+//Half Diamond
 
-for(int i=1; i<=5; i++){
-
+int n=5;
+for(int i=1; i<=n; i++){
+    
+    for(int j=1; j<=i; j++){
+        cout<<"*";
+    }
+    cout<<endl;
+}
+    
+for(int i=n-1; i>=1; i--){
+    
     for(int j=1; j<=i; j++){
         cout<<"*";
     }
     cout<<endl;
 }
 
-for(int i=4; i>=1; i--){
-
-    for(int j=i; j>=1; j--){
-        cout<<"*";
+// Diamond 
+int n=5;
+for(int i=1; i<=n; i++){
+    
+    for(int j=1; j<=n-i; j++){
+        cout<<" ";
+    }
+    for(int j=1; j<=i; j++){
+        cout<<"* ";
     }
     cout<<endl;
 }
-
-
+for(int i=n; i>=1; i--){
+    
+    for(int j=n-i; j>=1; j--){
+        cout<<" ";
+    }
+    for(int j=i; j>=1; j--){
+        cout<<"* ";
+    }
+    cout<<endl;
+}
+    
 return 0;
 }
