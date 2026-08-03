@@ -13,12 +13,11 @@ class Node {
 class Solution {
   public:
     int getCount(Node* head) {
-        // Code here
-         int c=0;
-         while(head!=nullptr){
-             c++;
-             head= head->next;
-         }
-         return c;
+        int c=0;
+        while(head!= nullptr){
+            c++;
+            head= head->next;
+        }
+        return c;
     }
 };
