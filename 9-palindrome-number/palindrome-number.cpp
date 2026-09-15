@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isPalindrome(int x) {
         int org=x;
-        long long rev=0;
+     long rev=0;
 
         while(x>0){
            int digit = x%10;
